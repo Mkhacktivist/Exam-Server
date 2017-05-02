@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+
 <!DOCTYPE html>
 
 <style>
@@ -22,10 +22,13 @@
 		width:100%;
 		position:absolute;top:0px;
 		margin:0 0 10px 0;
-		background-color:DimGrey;
+		background:linear-gradient(DarkGrey, DimGrey);
+		background:-moz-linear-gradient(DarkGrey, DimGrey);
+		background:-webkit-linear-gradient(DarkGrey, DimGrey);
+		background:-o-linear-gradient(DarkGrey, DimGrey);
 		max-height:70px;
 		padding:0px;
-		border:DarkSlateGrey 5px ridge; 
+		border:DarkGrey 5px ridge; 
 		color:AliceBlue;
 	}
 	
