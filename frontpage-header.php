@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php include('register.php'); ?>
 <!DOCTYPE html>
 
 <style>
