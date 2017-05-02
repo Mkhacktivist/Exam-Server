@@ -70,7 +70,11 @@
 			font-weight:bold;
 			
 	}
-	
+	.btn-sm
+	{
+		font-size:16px;
+		margin:0 5px 0 5px;
+	}
 </style>
 
 <head>
@@ -98,7 +102,7 @@
 				<label class="header-v-center"> Enrollment No:</label> <input class="darkgreytext" type="text" name="enrollmentno" placeholder="eg: 0114cs131xxx">
 				<label class="header-v-center"> Password:</label> <input type="password" class="darkgreytext" name="password" placeholder="Password" >
 				<input type="submit" class="darkgreytext btn-primary btn-sm" name="submit" value="Login">
-				<a href="signup.php" ><button type="button" class="btn-primary btn-sm header-v-center">Sign Up</button></a>
+				<a href="signup.php" ><button type="button" class="btn-primary btn-sm header-v-center">Sign up</button></a>
 			</form>
 		</div>
 		<div id="signup-div" class="col-sm-1 header-v-center">
