@@ -1,6 +1,7 @@
 <?php
 class Database {
 	function db_connect() {
+		
 		$servername = "127.0.0.1";
 		$username = "root";
 		$password = "";// Create connection
@@ -12,8 +13,9 @@ class Database {
 			die("Connection failed: " . $conn->connect_error);
 		} 
 		echo "Connected successfully";
+		return $conn;
 	}
-		function sign_up() {
+		function sign_up($varArray,$conn) {
 			$firstName = $_POST['firstname'];
 			$lastName = $_POST['lastname'];
 			$userId = $_POST['enrollmentno'];
@@ -28,7 +30,8 @@ class Database {
 			echo "Error: " . $updateSql . "<br>" . mysqli_error($conn);
 			}
 		}
+
 }
 
-?>
+
 ?>
