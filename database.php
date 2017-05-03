@@ -21,15 +21,20 @@ class Database {
 			$userId = $_POST['enrollmentno'];
 			$email = $_POST['email'];
 			$contactNumber = $_POST['mobile'];
+			$password = $_POST['password'];
+		
 
-			$updateSql = " INSERT INTO `user_profiles` (`first_name`, `last_name`, `user_id`, `email`, `contact_number`, `profile_picture`) VALUES ($firstName ,$lastName  ,$userId ,  $email , $contactNumber )";
-			
+			$updateSql =" INSERT INTO `user_profiles` (`first_name`, `last_name`, `user_id`, `email`, `contact_number`) VALUES ('$firstName' ,'$lastName' , '$userId' ,  '$email' , '$contactNumber' );";
+			$loginSql = "INSERT INTO `user_login` (`user_id`, `password`) VALUES ('$userId', '$password');";
 			if (mysqli_query($conn, $updateSql)) {
+				if(mysqli_query($conn, $loginSql)){
 				echo "New record created successfully";
+				}
 			} else {
+				}
 			echo "Error: " . $updateSql . "<br>" . mysqli_error($conn);
 			}
-		}
+		
 
 }
 
