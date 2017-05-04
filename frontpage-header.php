@@ -1,4 +1,4 @@
-
+<?php include('register.php'); ?>
 <!DOCTYPE html>
 
 <style>
@@ -22,13 +22,10 @@
 		width:100%;
 		position:absolute;top:0px;
 		margin:0 0 10px 0;
-		background:linear-gradient(DarkGrey, DimGrey);
-		background:-moz-linear-gradient(DarkGrey, DimGrey);
-		background:-webkit-linear-gradient(DarkGrey, DimGrey);
-		background:-o-linear-gradient(DarkGrey, DimGrey);
+		background-color:DimGrey;
 		max-height:70px;
 		padding:0px;
-		border:DarkGrey 5px ridge; 
+		border:DarkSlateGrey 5px ridge; 
 		color:AliceBlue;
 	}
 	
@@ -101,7 +98,7 @@
 			ONLINE EXAM PORTAL
 		</div>
 		<div id="login-div" class="col-sm-7">
-			<form action="login.php" method="post"  >
+			<form action="loginxxx.php" method="post"  >
 				<label class="header-v-center"> Enrollment No:</label> <input class="darkgreytext" type="text" name="enrollmentno" placeholder="eg: 0114cs131xxx">
 				<label class="header-v-center"> Password:</label> <input type="password" class="darkgreytext" name="password" placeholder="Password" >
 				<input type="submit" class="darkgreytext btn-primary btn-sm" name="submit" value="Login">

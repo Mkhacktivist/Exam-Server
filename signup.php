@@ -17,7 +17,7 @@ body
 <body>
 
 <div class="col-sm-2"></div>
-<form action="register.php" method="post" class="form-horizontal col-sm-8">
+<form action="signupxxx.php" method="post" class="form-horizontal col-sm-8">
 	<h2 style="text-align:center;">Registration Form</h2></br>
 	<div class="form-group" >
 		<label class="control-label col-sm-4">Enrollment No<sup>* </sup> : </label>
