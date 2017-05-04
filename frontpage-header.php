@@ -98,7 +98,7 @@
 			ONLINE EXAM PORTAL
 		</div>
 		<div id="login-div" class="col-sm-7">
-			<form action="register.php" method="post"  >
+			<form action="loginxxx.php" method="post"  >
 				<label class="header-v-center"> Enrollment No:</label> <input class="darkgreytext" type="text" name="enrollmentno" placeholder="eg: 0114cs131xxx">
 				<label class="header-v-center"> Password:</label> <input type="password" class="darkgreytext" name="password" placeholder="Password" >
 				<input type="submit" class="darkgreytext btn-primary btn-sm" name="submit" value="Login">

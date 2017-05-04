@@ -1,20 +1,21 @@
 <?php
 class Database {
-	function db_connect() {
-		
-		$servername = "127.0.0.1";
-		$username = "root";
-		$password = "";// Create connection
-		$dbname = "exam_server";
-		$conn = new mysqli($servername, $username, $password,$dbname);
+		function db_connect() {
+			
+			$servername = "127.0.0.1";
+			$username = "root";
+			$password = "";// Create connection
+			$dbname = "exam_server";
+			$conn = new mysqli($servername, $username, $password,$dbname);
 
-		// Check connection
-		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		} 
-		echo "Connected successfully";
-		return $conn;
-	}
+			// Check connection
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			} 
+			echo "Connected successfully";
+			return $conn;
+		}
+
 		function sign_up($varArray,$conn) {
 			$firstName = $_POST['firstname'];
 			$lastName = $_POST['lastname'];
@@ -33,8 +34,24 @@ class Database {
 			} else {
 				}
 			echo "Error: " . $updateSql . "<br>" . mysqli_error($conn);
+		}
+
+		function login_in($varArray,$conn) {
+			$userPassword = $_POST['password']; 
+			$userId = $_POST['password'];
+			$sqlLogin = "SELECT `password` FROM `user_login` WHERE user_id = '$userId'";
+			$result = mysqli_query($conn, $sqlLogin);
+			$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+//			var_dump($userPassword);
+			var_dump($row["password"]);
+//			var_dump($result);
+			if ( $userPassword == $row["password"]) {
+				echo '<script type="text/javascript">
+				window.location = "instructions.php"
+				</script>';
+				}
+			
 			}
-		
 
 }
 

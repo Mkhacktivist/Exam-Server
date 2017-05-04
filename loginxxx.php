@@ -2,5 +2,5 @@
 include ("database.php");
 
 $obj = new database;;
-$obj->sign_up($_POST,$obj->db_connect());
+$obj->login_in($_POST,$obj->db_connect());
 
