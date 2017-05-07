@@ -25,16 +25,16 @@ body
 		
 			
 			
-			<form action="adminsignin.php" method="post" class="form-horizontal col-sm-4">
+			<form action="adminloginxxx.php" method="post" class="form-horizontal col-sm-4">
 				<h2 style="text-align:center;">Admin Login</h2></br>
 				<div class="form-group" >
 					<label  class="control-label col-sm-4">Email<sup>* </sup> : </label>
-					<input required class="  col-sm-6" type="email" name="email" >
+					<input required class="  col-sm-6" type="email" name="adminemail" >
 					<div class="col-sm-1"></div>
 				</div>
 				<div class="form-group" >
 					<label class="control-label col-sm-4">Password<sup>* </sup> : </label>
-					<input required class="  col-sm-6" type="password" name="password">
+					<input required class="  col-sm-6" type="password" name="adminpassword">
 					<div class="col-sm-1"></div>
 				</div>
 				<div class="form-group" >
