@@ -36,8 +36,8 @@ body
 		<input required class="  col-sm-6" type="date" name="dob">
 	</div>
 	<div class="form-group" >
-		<label required class="control-label col-sm-4">Email<sup>* </sup> : </label>
-		<input class="  col-sm-6" type="email" name="email" >
+		<label  class="control-label col-sm-4">Email<sup>* </sup> : </label>
+		<input required class="  col-sm-6" type="email" name="email" >
 	</div>
 	<div class="form-group" >
 		<label class="control-label col-sm-4">Password<sup>* </sup> : </label>
